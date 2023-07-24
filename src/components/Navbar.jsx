@@ -21,7 +21,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={viktor_logo} alt="logo" className="w-9 h-9 object-contain" />
+          <img src={viktor_logo} alt="logo" className="w-32 h-9 object-contain" />
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((link) => (
