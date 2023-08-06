@@ -223,3 +223,11 @@
   animation: blink 1s infinite;
 }
 
+@keyframes slide {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}

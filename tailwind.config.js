@@ -27,8 +27,18 @@ module.exports = {
       // backgroundImage: {
       //   "hero-pattern": "url('/src/assets/abstract.jpg')",
       // },
+      animation: {
+        slide: 'slide 4s linear'
+      },
+      keyframes: {
+        slide: {
+          '0%': { width: '0%' },
+          '100%': { width: '100%' }
+        }
+      }
     },
   },
+  variants: {},
   plugins: [],
 };
 

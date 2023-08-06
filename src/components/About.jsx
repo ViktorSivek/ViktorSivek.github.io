@@ -1,65 +1,57 @@
 import React from "react";
-import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 
+import { BallCanvas } from "./canvas";
+import { technologies } from "../constants";
+
 import { styles } from "../styles";
-import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
-const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className='xs:w-[250px] w-full'>
-    <motion.div
-      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
-    >
-      <div
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
-      >
-        <img
-          src={icon}
-          alt='web-development'
-          className='w-16 h-16 object-contain'
-        />
-
-        <h3 className='text-white text-[20px] font-bold text-center'>
-          {title}
-        </h3>
-      </div>
-    </motion.div>
-  </Tilt>
-);
-
 const About = () => {
   return (
-    <>
+    <div className="flex flex-col items-center justify-center">
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <p className={`${styles.sectionSubText} text-center`}>
+          Introduction
+        </p>
+        <h2 className={`${styles.sectionHeadText} text-center`}>
+          About me
+        </h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        className='mt-4 text-secondary text-[17px]  leading-[30px] text-center'
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        I'm an Informatics student passionate about web development and data analytics. 
+        I really enjoy creating web applications, handling both the back and front ends. 
+        I'm also drawn to data analysis, data visualization, and machine learning. 
+        Python is my go-to programming language, and I've been using lots of its libraries like Pandas, Numpy, Matplotlib, Django, Selenium, and Scikit-learn. 
+        I can also work with web languages like HTML, CSS, JavaScript, and I'm currently learning frameworks React and Node.js.
+        I use MondoDB to store data, SQL to work with data, and Tableau and Power BI for creating visualizations. 
+        I've got some little experience with Linux and have also worked with Microsoft Azure. 
+        I'm a fast learner and love solving problems, always ready for new challenges to create user-friendly solutions. 
+        Let's team up and make your ideas come to life!
       </motion.p>
 
-      <div className='mt-20 flex flex-wrap gap-10'>
-        {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
+      <motion.a 
+        href="../public/cv/CV - Viktor Sívek.pdf" 
+        download 
+        variants={fadeIn("", "", 0.2, 1)} 
+        className="mt-8 bg-[#e13f3f] hover:bg-[#c42525] text-white font-bold py-4 px-6 rounded-full inline-block"
+      >
+        Download CV
+      </motion.a>
+
+      <div className='flex flex-row flex-wrap justify-center gap-10 mt-8'>
+        {technologies.map((technology) => (
+          <div className='w-28 h-28' key={technology.name}>
+            <BallCanvas icon={technology.icon} />
+          </div>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

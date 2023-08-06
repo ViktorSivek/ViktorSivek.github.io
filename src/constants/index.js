@@ -1,20 +1,13 @@
 import {
-    mobile,
-    backend,
-    creator,
-    web,
     javascript,
-    typescript,
     html,
     css,
     reactjs,
-    redux,
     tailwind,
     nodejs,
     mongodb,
     git,
     figma,
-    docker,
     meta,
     starbucks,
     tesla,
@@ -22,7 +15,9 @@ import {
     carrent,
     jobit,
     tripguide,
-    threejs,
+    python,
+    sql,
+    tableau
   } from "../assets";
   
   export const navLinks = [
@@ -40,26 +35,11 @@ import {
     },
   ];
   
-  const services = [
-    {
-      title: "Web Developer",
-      icon: web,
-    },
-    {
-      title: "React Native Developer",
-      icon: mobile,
-    },
-    {
-      title: "Backend Developer",
-      icon: backend,
-    },
-    {
-      title: "Content Creator",
-      icon: creator,
-    },
-  ];
-  
   const technologies = [
+    {
+      name: "Python",
+      icon: python,
+    },
     {
       name: "HTML 5",
       icon: html,
@@ -73,16 +53,8 @@ import {
       icon: javascript,
     },
     {
-      name: "TypeScript",
-      icon: typescript,
-    },
-    {
       name: "React JS",
       icon: reactjs,
-    },
-    {
-      name: "Redux Toolkit",
-      icon: redux,
     },
     {
       name: "Tailwind CSS",
@@ -97,8 +69,12 @@ import {
       icon: mongodb,
     },
     {
-      name: "Three JS",
-      icon: threejs,
+      name: "SQL",
+      icon: sql,
+    },
+    {
+      name: "Tableau",
+      icon: tableau,
     },
     {
       name: "git",
@@ -107,10 +83,6 @@ import {
     {
       name: "figma",
       icon: figma,
-    },
-    {
-      name: "docker",
-      icon: docker,
     },
   ];
   
@@ -262,4 +234,4 @@ import {
     },
 ];
   
-export { services, technologies, experiences, testimonials, projects };
+export { technologies, experiences, testimonials, projects };
