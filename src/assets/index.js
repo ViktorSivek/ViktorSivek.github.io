@@ -19,16 +19,16 @@ import python from "./tech/python.png";
 import sql from "./tech/sql.png";
 import tableau from "./tech/tableau.png";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import vse from "./company/vse.png";
+import pwc from "./company/pwc.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
 export {
+  vse,
+  pwc,
   tableau,
   sql,
   python,
@@ -48,10 +48,6 @@ export {
   nodejs,
   reactjs,
   tailwind,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
   carrent,
   jobit,
   tripguide,

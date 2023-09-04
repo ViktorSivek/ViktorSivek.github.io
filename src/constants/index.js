@@ -8,10 +8,8 @@ import {
     mongodb,
     git,
     figma,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
+    vse,
+    pwc,
     carrent,
     jobit,
     tripguide,
@@ -88,83 +86,44 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
+      title: "Aplikovaná informatika - Bc.",
+      company_name: "VŠE",
+      icon: vse,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "2020 - 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Integrace informačních technologií a podnikových procesů, analýza procesů a informačních systémů.",
+        "Řízení projektů a týmů, návrh, realizace a rozvoj softwarových systémů a produktů.",
+        "Správa databází, programovací jazyk Java, webové aplikace a technologie, web 2.0.",
+        "Bakalářská práce - Datová analýza českého realitního trhu (scrapování, analýza, vizualizace, machine learning).",
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
+      title: "Cybersecurity platform developer",
+      company_name: "PricewaterhouseCoopers",
+      icon: pwc,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "2023 - current",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Vývoj webové aplikace od základů, od konceptu a návrhu až po nasazení.",
+        "Integrování dvou řešení v oblasti kybernetické bezpečnosti, Microsoft Sentinel a Tanium.",
+        "Frontend byl navržen s použitím HTML, CSS a JavaScriptu, a to s pomocí frameworků Bootstrap a Tailwind CSS.",
+        "Backend byl implementován v Pythonu s využitím frameworku Django, což umožňuje robustní a škálovatelný výkon aplikace.",
+        "Autentizace uživatelů pomocí Microsoft Authentication Library, nasazení pomocí Dockeru.",
       ],
     },
     {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
+      title: "Data a analytika pro business - Mgr.",
+      company_name: "VŠE",
+      icon: vse,
       iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      date: "2023 - current",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Datová analýza a business analýza, analýza nestrukturovaných dat.",
+        "Management v oblasti dat a analytiky, reportingová řešení a jejich architektura, informační etika a ochrana osobních údajů.",
+        "Dobývání znalostí z databází, umělá inteligence.",
+        "Partnerské firmy - KPMG, Škoda Auto, ČSOB.",
       ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-  ];
-  
-  const testimonials = [
-    {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
     },
   ];
   
@@ -234,4 +193,4 @@ import {
     },
 ];
   
-export { technologies, experiences, testimonials, projects };
+export { technologies, experiences, projects };

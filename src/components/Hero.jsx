@@ -5,7 +5,7 @@ import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 
 const Hero = () => {
-  const phrases = ['I do web applications', 'I do data analysis'];
+  const phrases = ["Turning Ideas Into Code", "Your Data, Smarter Decisions", "Front-end to Back-end, I've Got it Covered", "Unearthing Insights Through Analytics", "Building User-Frindly Digital Solutions", "Fast Learner, Eager Problem Solver"];
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
