@@ -3,7 +3,7 @@ import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { CuboidCollider, Physics, RigidBody } from "@react-three/rapier";
 import { Suspense } from "react";
 import CanvasLoader from "../Loader"; // adjust import path based on your project structure
-import React, { useState, useRef, useEffect } from 'react'; // Importing useState, useRef, and useEffect
+import { useState, useRef, useEffect } from 'react'; // Importing useState, useRef, and useEffect
 
 const GameContainer = () => {
   const gameRef = useRef(null);
@@ -23,7 +23,7 @@ const GameContainer = () => {
   }, []);
 
   return (
-    <div ref={gameRef} style={{ width: '100%', height: '100vh' }}>
+    <div ref={gameRef} className="gameContainer">
         {isInView && <GamerCanvas />}
     </div>
   );

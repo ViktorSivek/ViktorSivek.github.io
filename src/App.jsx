@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { About, Contact, Experience, Hero, Navbar, Works, StarsCanvas, FullPageLoader } from './components';
+// import { Works } from './components';
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);

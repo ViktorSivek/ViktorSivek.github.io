@@ -1,6 +1,6 @@
-import React from "react";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
+import PropTypes from 'prop-types';
 
 import { styles } from "../styles";
 import { github } from "../assets";
@@ -17,7 +17,7 @@ const ProjectCard = ({
   source_code_link,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div variants={fadeIn("right", "spring", index * 0.5, 0.75)}>
       <Tilt
         options={{
           max: 45,
@@ -62,9 +62,42 @@ const ProjectCard = ({
             </p>
           ))}
         </div>
+
+        <div className='flex justify-between mt-5 ml-8 mr-8'>
+          <a
+            href={source_code_link} // Link to the live demo
+            target='_blank'
+            rel='noopener noreferrer'
+            className='bg-primary text-white py-3 px-8 rounded-md cursor-pointer'
+          >
+            Demo
+          </a>
+          <a
+            href={source_code_link} // Link to the GitHub source code
+            target='_blank'
+            rel='noopener noreferrer'
+            className='bg-primary text-white py-3 px-8 rounded-md cursor-pointer'
+          >
+            Code
+          </a>
+        </div>
       </Tilt>
     </motion.div>
   );
+};
+
+ProjectCard.propTypes = {
+  index: PropTypes.number.isRequired,
+  name: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  tags: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      color: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+  image: PropTypes.string.isRequired,
+  source_code_link: PropTypes.string.isRequired,
 };
 
 const Works = () => {
@@ -97,4 +130,5 @@ const Works = () => {
   );
 };
 
-export default SectionWrapper(Works, "");
+const NamedWorks = SectionWrapper(Works, "projects");
+export default NamedWorks;
