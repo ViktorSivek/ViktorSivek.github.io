@@ -1,7 +1,8 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+// import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
@@ -10,16 +11,17 @@ const SocialLinks = () => {
   return (
     <div className='flex space-x-4'>
       <motion.a
-        href='https://github.com/yourusername'
+        onClick={() => console.log("Link clicked")}
+        href="https://github.com/ViktorSivek"
         target='_blank'
         rel='noopener noreferrer'
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
-        className='bg-black rounded-full w-10 h-10 flex items-center justify-center'
+        className='bg-black rounded-full w-10 h-10 flex items-center justify-center z-20'
       >
         <FontAwesomeIcon icon={faGithub} className="text-white text-xl"/>
       </motion.a>
-      <motion.a
+      {/* <motion.a
         href='https://linkedin.com/in/yourusername'
         target='_blank'
         rel='noopener noreferrer'
@@ -28,13 +30,13 @@ const SocialLinks = () => {
         className='bg-blue-700 rounded-full w-10 h-10 flex items-center justify-center'
       >
         <FontAwesomeIcon icon={faLinkedin} className="text-white text-xl"/>
-      </motion.a>
+      </motion.a> */}
     </div>
   );
 };
 
 const Hero = () => {
-  const phrases = ["Turning Ideas Into Code", "Your Data, Smarter Decisions", "Front-end to Back-end, I've Got it", "Unearthing Insights Through Analytics", "Building User-Frindly Digital Solutions", "Fast Learner, Eager Problem Solver"];
+  const phrases = ["Turning Ideas Into Code", "Your Data, Smarter Decisions", "Front-end to Back-end, I've Got it", "Building User-Frindly Digital Solutions", "Fast Learner, Eager Problem Solver", "Data-Driven Insights, Smarter Outcomes", "Analyzing Today, Predicting Tomorrow", "Coding the Future, One Line at a Time"];
   const [index, setIndex] = useState(0);
 
   useEffect(() => {

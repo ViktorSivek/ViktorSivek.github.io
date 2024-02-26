@@ -10,12 +10,12 @@ import {
     figma,
     vse,
     pwc,
-    carrent,
-    jobit,
-    tripguide,
     python,
     sql,
-    tableau
+    tableau,
+    ai_doprava,
+    bezrealitky,
+    store,
   } from "../assets";
   
   export const navLinks = [
@@ -90,59 +90,59 @@ import {
   
   const experiences = [
     {
-      title: "Aplikovaná informatika - Bc.",
-      company_name: "VŠE",
+      title: "Applied Informatics - BSc.",
+      company_name: "University of Economics, Prague (VŠE)",
       icon: vse,
       iconBg: "#383E56",
       date: "2020 - 2023",
       points: [
-        "Integrace informačních technologií a podnikových procesů, analýza procesů a informačních systémů.",
-        "Řízení projektů a týmů, návrh, realizace a rozvoj softwarových systémů a produktů.",
-        "Správa databází, programovací jazyk Java, webové aplikace a technologie, web 2.0.",
-        "Bakalářská práce - Datová analýza českého realitního trhu (scrapování, analýza, vizualizace, machine learning).",
+        "Analysis and integration of information technologies and business processes.",
+        "Project and team management, design, implementation, and development of software systems and products.",
+        "Database management, Java programming language, web applications and technologies, web 2.0.",
+        "Bachelor's thesis - Data analysis of the Czech real estate market (scraping, analysis, visualization, machine learning).",
       ],
     },
     {
-      title: "Cybersecurity platform developer",
+      title: "Cybersecurity Platform Developer",
       company_name: "PricewaterhouseCoopers",
       icon: pwc,
       iconBg: "#E6DEDD",
       date: "2023 - current",
       points: [
-        "Vývoj webové aplikace od základů, od konceptu a návrhu až po nasazení.",
-        "Integrování dvou řešení v oblasti kybernetické bezpečnosti, Microsoft Sentinel a Tanium.",
-        "Frontend byl navržen s použitím HTML, CSS a JavaScriptu, a to s pomocí frameworků Bootstrap a Tailwind CSS.",
-        "Backend byl implementován v Pythonu s využitím frameworku Django, což umožňuje robustní a škálovatelný výkon aplikace.",
-        "Autentizace uživatelů pomocí Microsoft Authentication Library, nasazení pomocí Dockeru.",
+        "Development of a web application from scratch, from concept and design to deployment.",
+        "Integration of two cybersecurity solutions, Microsoft Sentinel and Tanium.",
+        "Frontend designed using HTML, CSS, and JavaScript, with the help of frameworks Bootstrap and Tailwind CSS.",
+        "Backend implemented in Python using the Django framework, enabling robust and scalable application performance.",
+        "User authentication with Microsoft Authentication Library, deployment using Docker.",
       ],
     },
     {
-      title: "Data a analytika pro business - Mgr.",
-      company_name: "VŠE",
+      title: "Data and Analytics for Business - MSc.",
+      company_name: "University of Economics, Prague (VŠE)",
       icon: vse,
       iconBg: "#383E56",
       date: "2023 - current",
       points: [
-        "Datová analýza a business analýza, analýza nestrukturovaných dat.",
-        "Management v oblasti dat a analytiky, reportingová řešení a jejich architektura, informační etika a ochrana osobních údajů.",
-        "Dobývání znalostí z databází, umělá inteligence.",
-        "Partnerské firmy - KPMG, Škoda Auto, ČSOB.",
+        "Data analysis and business analysis, analysis of structured, semi-structured and unstructured data.",
+        "Data and analytics management, reporting solutions and their architecture, information ethics, and personal data protection.",
+        "Knowledge discovery from databases, artificial intelligence.",
+        "Partner companies - KPMG, Škoda Auto, ČSOB.",
       ],
     },
   ];
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "AI Doprava ",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "AI Doprava is Next.js project, to provide real-time information from the Czech police api with implemented chatbot. AI Doprava aims to make road information interactive.",
       tags: [
         {
-          name: "react",
+          name: "nextjs",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "openai",
           color: "green-text-gradient",
         },
         {
@@ -150,50 +150,59 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: ai_doprava,
+      source_code_link: "https://github.com/ViktorSivek/ai_chat_demo",
+      demo_link: "https://ai-chat-demo-delta.vercel.app/",
+      user: "demouser",
+      password: "demopassword",
     },
     {
-      name: "Job IT",
+      name: "Bezrealitky Analysis",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Bezrealitky Analysis is my bachelor's thesis focusing on a machine learning analysis of real estate data. The data is scraped from the online platform Bezrealitky.cz.",
       tags: [
         {
-          name: "react",
+          name: "python",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "selenium",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "scikit-learn",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: bezrealitky,
+      source_code_link: "https://github.com/ViktorSivek/Bezrealitky_analysis_app",
+      demo_link: "https://colab.research.google.com/drive/1O2qQCN4eIV-nNOV7UG9vyc8XvXUYcrFh?usp=sharing",
+      user: "-",
+      password: "-",
     },
     {
-      name: "Trip Guide",
+      name: "Ecommerce Store",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "E-commerce store is a modern web application designed for online shopping and efficient management through an admin dashboard.",
       tags: [
         {
           name: "nextjs",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "prisma",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "shadcn/ui",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: store,
+      source_code_link: "https://github.com/ViktorSivek/ecommerce_project_store",
+      demo_link: "https://ecommerce-project-store-zeta.vercel.app/",
+      user: "demouser",
+      password: "demopassword",
     },
 ];
   

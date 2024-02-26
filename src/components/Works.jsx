@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import PropTypes from 'prop-types';
 
 import { styles } from "../styles";
-import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -15,6 +14,9 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  demo_link,
+  user,
+  password,
 }) => {
   return (
     <motion.div variants={fadeIn("right", "spring", index * 0.5, 0.75)}>
@@ -24,7 +26,7 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
+        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] h-[580px] w-full'
       >
         <div className='relative w-full h-[230px]'>
           <img
@@ -32,24 +34,13 @@ const ProjectCard = ({
             alt='project_image'
             className='w-full h-full object-cover rounded-2xl'
           />
-
-          <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
-            >
-              <img
-                src={github}
-                alt='source code'
-                className='w-1/2 h-1/2 object-contain'
-              />
-            </div>
-          </div>
         </div>
 
         <div className='mt-5'>
           <h3 className='text-white font-bold text-[24px]'>{name}</h3>
           <p className='mt-2 text-secondary text-[14px]'>{description}</p>
+          <p className='mt-2 text-secondary text-[14px]'>Demo user: {user}</p>
+          <p className='mt-2 text-secondary text-[14px]'>Demo password: {password}</p>
         </div>
 
         <div className='mt-4 flex flex-wrap gap-2'>
@@ -65,7 +56,8 @@ const ProjectCard = ({
 
         <div className='flex justify-between mt-5 ml-8 mr-8'>
           <a
-            href={source_code_link} // Link to the live demo
+            onClick={() => console.log("Link clicked")}
+            href={demo_link} // Link to the live demo
             target='_blank'
             rel='noopener noreferrer'
             className='bg-primary text-white py-3 px-8 rounded-md cursor-pointer'
@@ -98,14 +90,17 @@ ProjectCard.propTypes = {
   ).isRequired,
   image: PropTypes.string.isRequired,
   source_code_link: PropTypes.string.isRequired,
+  demo_link: PropTypes.string.isRequired,
+  user: PropTypes.string.isRequired,
+  password: PropTypes.string.isRequired,
 };
 
 const Works = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} `}>My work</p>
-        <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
+        <p className={`${styles.sectionSubText} text-center `}>My work</p>
+        <h2 className={`${styles.sectionHeadText} text-center `}>Project Demos & Code</h2>
       </motion.div>
 
       <div className='w-full flex'>
@@ -113,11 +108,6 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-          Following projects showcases my skills and experience through
-          real-world examples of my work. Each project is briefly described with
-          links to code repositories and live demos in it. It reflects my
-          ability to solve complex problems, work with different technologies,
-          and manage projects effectively.
         </motion.p>
       </div>
 

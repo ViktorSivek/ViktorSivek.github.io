@@ -23,15 +23,15 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px]  leading-[30px] text-center'
       >
-        I&aposm an Informatics student passionate about web development and data analytics.
+        I am an Informatics student passionate about web app development, data analytics and the exciting world of artificial intelligence.
         I really enjoy creating web applications, handling both the back and front ends. 
-        I&aposm also drawn to data analysis, data visualization, and machine learning. 
-        Python is my go-to programming language, and I&aposve been using lots of its libraries like Pandas, Numpy, Matplotlib, Django, Selenium, and Scikit-learn. 
-        I can also work with web languages like HTML, CSS, JavaScript, and I&aposm currently learning frameworks React and Node.js.
-        I use MondoDB to store data, SQL to work with data, and Tableau and Power BI for creating visualizations. 
-        I&aposve got some little experience with Linux and have also worked with Microsoft Azure. 
-        I&aposm a fast learner and love solving problems, always ready for new challenges to create user-friendly solutions. 
-        Let&aposs team up and make your ideas come to life!
+        I also drawn to data analysis, data visualization, and machine learning. 
+        Python is my go-to programming language, and I have been using lots of its libraries like Pandas, Numpy, Matplotlib, Django, Selenium, and Scikit-learn. 
+        I can also work with web languages like HTML, CSS, JavaScript, and I am currently learning frameworks React and Next.js.
+        I use SQL to work with data, and Tableau or Power BI for creating visualizations. 
+        I got some little experience with Linux and have also worked with Microsoft Azure. 
+        I am a fast learner and love solving problems, always ready for new challenges to create user-friendly solutions. 
+        Lets team up and make your ideas come to life!
       </motion.p>
 
       <motion.a 

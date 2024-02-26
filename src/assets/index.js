@@ -1,7 +1,5 @@
 import logo from "./logo2.svg";
 import viktor_logo from "./viktor_logo.svg";
-import mobile from "./mobile.png";
-import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
@@ -22,9 +20,9 @@ import tableau from "./tech/tableau.png";
 import vse from "./company/vse.png";
 import pwc from "./company/pwc.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import ai_doprava from "./project/ai_doprava.png";
+import bezrealitky from "./project/bezrealitky.png";
+import store from "./project/store.png";
 
 export {
   vse,
@@ -34,8 +32,6 @@ export {
   python,
   viktor_logo,
   logo,
-  mobile,
-  web,
   github,
   menu,
   close,
@@ -48,7 +44,7 @@ export {
   nodejs,
   reactjs,
   tailwind,
-  carrent,
-  jobit,
-  tripguide,
+  ai_doprava,
+  bezrealitky,
+  store,
 };
