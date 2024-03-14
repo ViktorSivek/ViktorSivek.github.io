@@ -35,7 +35,7 @@ const About = () => {
       </motion.p>
 
       <motion.a 
-        href="../public/cv/CV - Viktor Sívek.pdf" 
+        href="/cv/CV_ViktorSívek.pdf" 
         download 
         variants={fadeIn("", "", 0.2, 1)} 
         className="mt-8 bg-[#e13f3f] hover:bg-[#c42525] text-white font-bold py-4 px-6 rounded-full inline-block"

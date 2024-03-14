@@ -1,8 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-// import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
@@ -21,16 +20,16 @@ const SocialLinks = () => {
       >
         <FontAwesomeIcon icon={faGithub} className="text-white text-xl"/>
       </motion.a>
-      {/* <motion.a
-        href='https://linkedin.com/in/yourusername'
+      <motion.a
+        href='https://www.linkedin.com/in/viktor-s%C3%ADvek-4679b52b8/'
         target='_blank'
         rel='noopener noreferrer'
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
-        className='bg-blue-700 rounded-full w-10 h-10 flex items-center justify-center'
+        className='bg-blue-700 rounded-full w-10 h-10 flex items-center justify-center z-20'
       >
         <FontAwesomeIcon icon={faLinkedin} className="text-white text-xl"/>
-      </motion.a> */}
+      </motion.a>
     </div>
   );
 };
